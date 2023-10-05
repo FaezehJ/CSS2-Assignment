@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Sriracha&display=swap');
+
+   
+body {
+    background-color: rgb(149, 176, 244)
+}
+
+h1 {
+    font-family: 'Sriracha', sans-serif;
+    font-size: xx-large;
+} 
+
+h3 {
+    font-family: 'Sriracha', sans-serif;
+    font-size: large;
+}
+
+p {
+    font-family: 'Sriracha', sans-serif;
+    font-size: large;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 50px;
+    border-bottom: 4px solid rgb(153, 15, 199);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

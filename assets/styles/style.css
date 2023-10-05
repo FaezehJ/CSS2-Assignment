@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Sriracha&display=swap');
+
+body {
+    background-color: rgb(152, 243, 235);
+    font-family: 'Sriracha', sans-serif;
+    font-size: large;
+    text-align: justify;
+    margin: 0
+}
+
+.container {
+    background-color: rgb(15, 167, 151);
+    margin: 0 auto
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.box {
+    width: 464px;
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 50px;
+    border-bottom: 4px solid rgb(153, 15, 199);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.icon-container {
+    display: flex'
+    justify-content: flex-end; 
+    gap: 20px;
+}
+
+#shopping-cart-icon img, #search-icon img {
+    width: 50px;  
+    height: auto;    
+}
+
+.search-container input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #3cd32c;
+    color: white;
+}
+
+#menu-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: url(https://blog.hubspot.com/hs-fs/hubfs/What%20is%20a%20Hamburger%20Button.png?width=225&name=What%20is%20a%20Hamburger%20Button.png);
+    background-size: cover;
+}
+
+#shoppng-cart-icon {
+    display: block;
+    width: 20px;
+    height: 20x;
+    background: url(http://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg);
+    background-size: cover;
+}
+
+.video {
+    width: 100%;
+    height:max-content;
+    margin: 0 auto;
+}
+
+/* Media Queries*/
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-color: rgb(243, 140, 250);
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    } 
+
+    #menu-icon {
+        display: block;
+    }
+    #shopping-cart-icon {
+        display: block;
+    }
+    #search-icon {
+        display: block;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        position: absolute;
+        background: #fff;
+        top: 140px;
+        left: 0;
+        padding: 10px;
+        border: 2px solid #000;
+        display: none;
+        
+    }
+
+    .nav-list li {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .nav-list li a {
+        color: white;  
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+
+    .navbar:hover .nav-list {
+        display: flex;
+        
+    }
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 20px 0 20px 0;
+        background-color: rgb(76, 8, 91);
+        border-bottom: 1px solid #fff;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+}
+
+footer {
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: yellow;
+    padding: 5px;
+    color: black;
+} 
+
+footer h2, footer p {
+    margin: 10px;
+}
+
+footer input, footer button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5%;
+}
+
+footer button {
+    background-color: green;
+    color: white;  
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-top: 10px;
+    }
+}
